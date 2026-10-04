@@ -1,0 +1,12 @@
+[project]
+name = "termiai-cli"
+version = "0.1.0"
+description = "TermiAI v0.1 - Natural Language Agentic CLI"
+authors = [{name = "Sana-7860"}]
+dependencies = [
+  "rich",
+  "openai"
+]
+
+[project.scripts]
+termiai = "cli:show_banner"
