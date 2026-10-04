@@ -1,13 +1,17 @@
-## My Workstream - Journal, Undo & Audit
-**Owner:** Sana-7860
+## My Workstream - CLI/UX, LLM Layer and Packaging
+**Owner:** Sana-7860 (Workstream 6)
 
 ### Files Created:
-1. **journal.py** - Logs all file actions (CREATE, EDIT, DELETE) into .termiai/journal/actions.jsonl with timestamp
-2. **snapshot.py** - Creates backup snapshots of the project for undo functionality
-3. **verify.py** - Verifies the integrity of journal file
+1. **cli.py** - Rich terminal UI, banner, colored output, and approval prompts using Rich library
+2. **llm_provider.py** - Provider abstraction for cloud (OpenAI) and local models with unified interface
+3. **config.py** - Config management for provider, model, theme - loads/saves from ~/.termiai/config.json
 
 ### Features Implemented:
-- Action logging in JSONL format
-- Timestamp tracking
-- Snapshot management
-- Journal verification# TermiAI-v0.1-Natural-Language-Agentic-CLI
+- Rich Terminal UI with colors and prompts
+- Approval system before risky actions
+- Cloud & Local LLM support
+- Config file management
+- PyPI packaging ready structure
+
+### Also Contributed:
+- journal.py, snapshot.py, verify.py (Workstream 4 support)
